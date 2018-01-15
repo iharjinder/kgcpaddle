@@ -27,7 +27,7 @@ class Base extends React.Component {
     super()
     this.state = {
       donations: [],
-      newstuff: []
+      register: []
     }
     this.load_donations = this.load_donations.bind(this)
     this.load_register  = this.load_register.bind(this)
@@ -70,7 +70,7 @@ class Base extends React.Component {
       return  (
         <div className="home">
           <Queue
-            newstuff={this.state.newstuff}
+            register={this.state.register}
           />
 
           <BarGraph
