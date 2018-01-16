@@ -14,25 +14,24 @@
 
   table {
     margin: 5px 0px 0px 0px;
+    border-collapse: collapse;
   }
 
   .entry {
     color: white;
     width: 100%;
+    margin: 4px;
   }
 
   td {
-    padding-right: 20px
+    padding: 4px 20px 4px 20px
   }
 
   .example-enter {
     opacity: 0.01;
   }
 
-  .example-enter.example-enter-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
-  }
+  
 
   .example-leave {
     opacity: 1;
@@ -47,9 +46,37 @@
     opacity: 0.01;
   }
 
-  .example-appear.example-appear-active {
+  .example-enter.example-enter-active, .example-appear.example-appear-active {
     opacity: 1;
-    transition: opacity .5s ease-in;
+
+    -webkit-animation-name: demo;
+      -webkit-animation-duration: 3s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: linear;
+    -moz-animation-name: demo;
+      -moz-animation-duration: 3s;
+      -moz-animation-iteration-count: 1;
+      -moz-animation-timing-function: linear;
   }
 
+  @-webkit-keyframes demo {
+      0% {
+          background-color: transparent;
+          color: #0c4270;
+          opacity:1;
+      }
+      10% {
+          background-color: white;
+          color: #0c4270;
+          opacity:1;
+      }
+      90% {
+          background-color: white;
+          color: #0c4270;
+      }
+      100% {
+          background-color: transparent;
+          color: white;
+      }
+  }
 }
