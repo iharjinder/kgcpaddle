@@ -22,9 +22,9 @@ class DonorList extends React.Component {
       {
        <CSSTransitionGroup
           transitionName="example"
-          transitionEnterTimeout={500}
+          transitionEnterTimeout={3000}
           transitionLeaveTimeout={300}
-          transitionAppearTimeout={500}
+          transitionAppearTimeout={3000}
           transitionAppear={true}
           component="tbody">
           {tableRows}
