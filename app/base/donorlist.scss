@@ -1,0 +1,55 @@
+.donorList {
+  height: 100%;
+  margin: 20px 0px;
+  padding: 0px;
+  background-color: #0c4270;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 50px;
+
+  .Amount {
+    color: white;
+    padding: 10px;
+    background-color: #3575ab;
+  }
+
+  table {
+    margin: 5px 0px 0px 0px;
+  }
+
+  .entry {
+    color: white;
+    width: 100%;
+  }
+
+  td {
+    padding-right: 20px
+  }
+
+  .example-enter {
+    opacity: 0.01;
+  }
+
+  .example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+  .example-leave {
+    opacity: 1;
+  }
+
+  .example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+
+  .example-appear {
+    opacity: 0.01;
+  }
+
+  .example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+  }
+
+}
