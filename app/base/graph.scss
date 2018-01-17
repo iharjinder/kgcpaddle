@@ -1,20 +1,24 @@
 .Graph {
-
-  margin: 20px 0px;
+  margin: 20px 10px;
   background-color: #f7f5f5;
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 50px;
+  font-size: 30px;
+  float: left;
+  width: 15%;
+  height: 90%;
+  position: relative;
+  text-align: center;
 
   .Amount {
     color: black;
-    line-height: 80px;
-    margin: 20px;
-    position: relative;
+    position: absolute;
+    width: 100%;
   }
 
   .Bar {
     background-color:orange;
     position: absolute;
-    height: 80px;
+    bottom: 0;
+    width: 100%;
   }
 }

@@ -99,16 +99,17 @@ class Base extends React.Component {
 
   render() {
       return  (
-        <div className="home">
+        <div className="home" style={{flex: 1}}>
           <Title/>
-          <Graph
-            totalRaised={this.state.totalRaised}
-            goal={this.state.goal}
-          />
+          
           <DonorList
             donations={this.state.donations}
             currentAmount={this.state.currentAmount}
             register={this.state.register}
+          />
+          <Graph
+            totalRaised={this.state.totalRaised}
+            goal={this.state.goal}
           />
         </div>
       )
