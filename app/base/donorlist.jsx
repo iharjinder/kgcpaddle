@@ -10,7 +10,7 @@ class DonorList extends React.Component {
     
     const tableRows = donations[currentAmount].map((entry,j) =>
     (  <tr className="entry" key={entry}>
-        <td>{entry}</td>
+        <td className="bid">{entry}</td>
         <td>{register[entry]}</td>
        </tr>
     ));

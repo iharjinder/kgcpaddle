@@ -1,10 +1,14 @@
 .donorList {
-  height: 100%;
   margin: 20px 0px;
   padding: 0px;
   background-color: #0c4270;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 50px;
+  float: left;
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  overflow: scroll;
 
   .Amount {
     color: white;
@@ -13,25 +17,24 @@
   }
 
   table {
-    margin: 5px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     border-collapse: collapse;
+    width: 100%;
   }
 
   .entry {
     color: white;
     width: 100%;
     margin: 4px;
-  }
 
-  td {
-    padding: 4px 20px 4px 20px
+    .bid {
+      text-align: center;
+    }
   }
 
   .example-enter {
     opacity: 0.01;
   }
-
-  
 
   .example-leave {
     opacity: 1;

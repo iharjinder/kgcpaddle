@@ -9,8 +9,8 @@ class Graph extends React.Component {
     const { totalRaised, goal } = this.props
     return  (
       <div className="Graph">
-      	<div className="Bar" style={{width: (totalRaised * 100 / goal) + '%'}}></div>
-      	<div className="Amount">${ totalRaised } raised</div>
+      	<div className="Bar" style={{height: (totalRaised * 100 / goal) + '%'}}></div>
+      	<div className="Amount" style={{bottom: (totalRaised * 100 / goal) + '%'}} >${ totalRaised }</div>
       </div>
     )
   }
