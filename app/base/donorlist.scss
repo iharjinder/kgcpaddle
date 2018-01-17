@@ -1,34 +1,47 @@
 .donorList {
-  margin: 20px 0px;
-  padding: 0px;
+
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  bottom: 0px;
+  width: 50%;
+
+  // margin: 20px 0px;
+  // padding: 0px;
   background-color: #0c4270;
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 50px;
+  font-size: 34px;
   float: left;
-  width: 80%;
-  height: 90%;
-  display: inline-block;
-  overflow: scroll;
+  // width: 80%;
+  // height: 90%;
+  // display: inline-block;
+  // overflow: scroll;
 
   .Amount {
     color: white;
     padding: 10px;
     background-color: #3575ab;
+    padding-left: 50px;
   }
 
   table {
     margin: 10px 0px 0px 0px;
     border-collapse: collapse;
-    width: 100%;
+    width: calc(100% - 50px);
+    margin-left: 50px;
   }
 
   .entry {
     color: white;
     width: 100%;
     margin: 4px;
+    border-bottom: 1px solid #579;
 
     .bid {
-      text-align: center;
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width:120px;
     }
   }
 

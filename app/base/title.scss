@@ -1,7 +1,23 @@
-.Title {
-  width: 100%;
-  text-align: center;
+.TitleArea {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 200px;
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 30px;
   color: white;
+
+  // width: 100%;
+
+  .name {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #ace;
+  }
+  .title {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 50px;
+  }
 }

@@ -6,8 +6,13 @@ require("./title.scss");
 class Title extends React.Component {
   render() {
     return  (
-      <div className="Title">
-      	Khalsa Gurmat Center
+      <div className="TitleArea">
+        <div className="name">
+      	   Khalsa Gurmat Center
+        </div>
+        <div className="title">
+          Raise the Paddle
+        </div>
       </div>
     )
   }

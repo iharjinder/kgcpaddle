@@ -7,7 +7,7 @@ require("./donorlist.scss");
 class DonorList extends React.Component {
   render() {
     const { donations, currentAmount, register } = this.props
-    
+
     const tableRows = donations[currentAmount].map((entry,j) =>
     (  <tr className="entry" key={entry}>
         <td className="bid">{entry}</td>
@@ -17,20 +17,20 @@ class DonorList extends React.Component {
 
     return  (
       <div className="donorList">
-      <div className="Amount">${currentAmount}</div>
-      <table>
-      {
-       <CSSTransitionGroup
-          transitionName="example"
-          transitionEnterTimeout={3000}
-          transitionLeaveTimeout={300}
-          transitionAppearTimeout={3000}
-          transitionAppear={true}
-          component="tbody">
-          {tableRows}
-        </CSSTransitionGroup>
-      }
-      </table>
+        <div className="Amount">${currentAmount}</div>
+        <table>
+        {
+         <CSSTransitionGroup
+            transitionName="example"
+            transitionEnterTimeout={3000}
+            transitionLeaveTimeout={300}
+            transitionAppearTimeout={3000}
+            transitionAppear={true}
+            component="tbody">
+            {tableRows}
+          </CSSTransitionGroup>
+        }
+        </table>
       </div>
     )
   }
