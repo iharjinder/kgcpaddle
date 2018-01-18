@@ -4,31 +4,33 @@
   top: 200px;
   left: 0px;
   bottom: 0px;
-  width: 50%;
-
-  // margin: 20px 0px;
-  // padding: 0px;
+  width: calc(50% - 50px);
   background-color: #0c4270;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 34px;
   float: left;
+  overflow: scroll; 
+  margin-left:50px;
+
   // width: 80%;
   // height: 90%;
   // display: inline-block;
-  // overflow: scroll;
+  // margin: 20px 0px;
+  // padding: 0px;
 
   .Amount {
     color: white;
-    padding: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    position: fixed;
+    width: inherit;
     background-color: #3575ab;
-    padding-left: 50px;
   }
 
   table {
-    margin: 10px 0px 0px 0px;
+    margin-top: 60px;
     border-collapse: collapse;
-    width: calc(100% - 50px);
-    margin-left: 50px;
+    width: 100%;
   }
 
   .entry {
@@ -38,7 +40,7 @@
     border-bottom: 1px solid #579;
 
     .bid {
-      text-align: left;
+      text-align: center;
       padding-top: 10px;
       padding-bottom: 10px;
       width:120px;
